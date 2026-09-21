@@ -16,9 +16,9 @@ import {
 } from "./mock-data";
 
 export const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
+  process.env.API_BASE_URL || "http://localhost:8000";
 
-  if (!process.env.NEXT_PUBLIC_API_BASE_URL &&
+  if (!process.env.API_BASE_URL &&
     typeof window !== "undefined" &&
     window.location.hostname !== "localhost") {
   console.warn(

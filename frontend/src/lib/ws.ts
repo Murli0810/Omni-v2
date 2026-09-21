@@ -73,8 +73,8 @@ export function useAlertsStream(initialEvents: EventRecord[] = []): StreamState 
     let ws: WebSocket | null = null;
     let isCancelled = false;
 
-    const wsUrl = process.env.NEXT_PUBLIC_WS_BASE_URL || "ws://localhost:8000/ws/alerts";
-    if (!process.env.NEXT_PUBLIC_WS_BASE_URL &&
+    const wsUrl = process.env.WS_BASE_URL || "ws://localhost:8000/ws/alerts";
+    if (!process.env.WS_BASE_URL &&
         typeof window !== "undefined" &&
         window.location.hostname !== "localhost") {
       console.warn(
