@@ -1,0 +1,21 @@
+{
+  "name": "Omni - AI Mobile Urban Intelligence Platform",
+  "short_name": "Omni",
+  "description": "Mobile Urban Sensing Unit & Real-Time Incident Escalation Dashboard",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F9FC",
+  "theme_color": "#0EA5A0",
+  "icons": [
+    {
+      "src": "/icon-192.jpeg",
+      "sizes": "192x192",
+      "type": "image/hpeg"
+    },
+    {
+      "src": "/icon-512.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
