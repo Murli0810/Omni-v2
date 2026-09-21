@@ -2,11 +2,11 @@ import requests
 import json
 import os
 from sqlalchemy import func
-from backend.app.db.models import Event
+from app.db.models import Event
 from sqlalchemy.orm import Session
 from geoalchemy2.shape import from_shape
 from shapely.geometry import Point
-from backend.app.db.models import Recommendation
+from app.db.models import Recommendation
 from geoalchemy2 import Geography
 
 OVERPASS_MIRRORS = [

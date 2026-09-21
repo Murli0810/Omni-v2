@@ -7,15 +7,15 @@ from geoalchemy2.shape import from_shape, to_shape
 from shapely.geometry import Point
 from datetime import datetime, timezone
 
-from backend.app.core.database import get_db, engine, Base, sessionLocal
-from backend.app.db.models import Event, Telemetry, DefectMaster, Device
-from backend.app.db.schemas import EventCreate, EventOut, TelemetryCreate, DefectMasterOut, HeatmapPoint, SummaryStats
-from backend.app.services.dedup import dedup_event
-from backend.app.core.dispatch import dispatch_event
-from backend.app.core.ws_manager import manager
-from backend.app.services.recommendations import generate_recommendation, count_nearby_pedestrian_alerts
-from backend.app.db.schemas import RecommendationOut
-from backend.app.db.models import Recommendation
+from app.core.database import get_db, engine, Base, sessionLocal
+from app.db.models import Event, Telemetry, DefectMaster, Device
+from app.db.schemas import EventCreate, EventOut, TelemetryCreate, DefectMasterOut, HeatmapPoint, SummaryStats
+from app.services.dedup import dedup_event
+from app.core.dispatch import dispatch_event
+from app.core.ws_manager import manager
+from app.services.recommendations import generate_recommendation, count_nearby_pedestrian_alerts
+from app.db.schemas import RecommendationOut
+from app.db.models import Recommendation
 
 
 app= FastAPI(title="Omni Backend")

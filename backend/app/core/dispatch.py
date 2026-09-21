@@ -1,4 +1,4 @@
-from backend.app.core.ws_manager import manager
+from app.core.ws_manager import manager
 
 async def dispatch_event(event_out: dict):
     if event_out.get("priority")=="critical":

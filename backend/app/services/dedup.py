@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import func, text
-from backend.app.db.models import DefectMaster
+from app.db.models import DefectMaster
 from geoalchemy2.shape import to_shape
 from geoalchemy2 import Geography
 

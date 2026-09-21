@@ -2,7 +2,7 @@ import uuid
 from sqlalchemy import Column, String, Float, Integer, BigInteger, TIMESTAMP, JSON, func
 from sqlalchemy.dialects.postgresql import UUID
 from geoalchemy2 import Geometry
-from backend.app.core.database import Base
+from app.core.database import Base
 
 class Device(Base):
     __tablename__= "devices"
