@@ -38,12 +38,9 @@ export default function Navbar() {
                   <span className="text-lg font-black tracking-tight text-slate-900">
                     Omni
                   </span>
-                  <span className="rounded-full bg-accent-50 px-2 py-0.5 font-mono text-[10px] font-bold text-accent-700 border border-accent-200">
-                    PS 26124
-                  </span>
                 </div>
                 <p className="text-[10px] font-semibold text-slate-400">
-                  AI-Powered Mobile Urban Intelligence Platform
+                  Onboard Municipal Network for Inspection
                 </p>
               </div>
             </Link>
@@ -57,10 +54,7 @@ export default function Navbar() {
                     key={href}
                     href={href}
                     className={cn(
-                      "flex items-center gap-2 rounded-2xl px-4 py-2 text-xs font-bold transition-all duration-200",
-                      isActive
-                        ? "bg-accent-600 text-white shadow-glass-sm"
-                        : "text-slate-600 hover:bg-white/80 hover:text-slate-900"
+                      "flex items-center gap-2 rounded-2xl px-4 py-2 text-xs font-bold transition-all duration-200"
                     )}
                   >
                     <Icon className="h-4 w-4" strokeWidth={2.2} />
@@ -68,18 +62,7 @@ export default function Navbar() {
                   </Link>
                 );
               })}
-            </nav>
-
-            {/* Status indicator */}
-            <div className="flex items-center gap-2">
-              <div className="glass-panel-sm flex items-center gap-2 rounded-2xl px-3.5 py-1.5">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
-                </span>
-                <span className="text-xs font-bold text-slate-700">Fleet Sensing Online</span>
-              </div>
-            </div>
+            </nav>            
           </div>
         </div>
       </header>
@@ -94,9 +77,6 @@ export default function Navbar() {
               </div>
               <span className="text-base font-black tracking-tight text-slate-900">
                 Omni
-              </span>
-              <span className="rounded bg-accent-50 px-1.5 py-0.5 text-[9px] font-bold text-accent-700">
-                SIH 2026
               </span>
             </Link>
             <div className="flex items-center gap-1.5 rounded-full bg-white/70 px-2.5 py-1">

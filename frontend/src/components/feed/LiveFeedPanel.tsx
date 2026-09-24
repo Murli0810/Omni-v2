@@ -43,27 +43,11 @@ export default function LiveFeedPanel({
             <p className="text-sm font-extrabold text-slate-900">
               Escalation Feed
             </p>
-            <span className="flex h-2 w-2 relative">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-critical-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-critical-500" />
-            </span>
           </div>
           <p className="text-xs text-slate-500">Live dual-path dispatch stream</p>
         </div>
 
         <div className="flex items-center gap-1.5">
-          {connectionStatus === "connected" ? (
-            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-bold text-emerald-700">
-              <Radio className="h-2.5 w-2.5 animate-pulse text-emerald-600" />
-              WS Live
-            </span>
-          ) : (
-            <span className="inline-flex items-center gap-1 rounded-full bg-amber-50 px-2 py-0.5 text-[10px] font-bold text-amber-700">
-              <Radio className="h-2.5 w-2.5 text-amber-600" />
-              5s Polling
-            </span>
-          )}
-
           {onSimulate && (
             <button
               onClick={onSimulate}

@@ -50,10 +50,7 @@ export default function RecommendationsPage() {
           </div>
         </div>
 
-        <div className="glass-panel-sm flex items-center gap-2 rounded-2xl px-3.5 py-1.5 self-start sm:self-auto">
-          <Sparkles className="h-3.5 w-3.5 text-accent-600" />
-          <span className="text-xs font-bold text-slate-700">Rule Engine Active</span>
-        </div>
+        
       </div>
 
       {/* Priority Filter Toolbar */}

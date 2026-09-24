@@ -30,10 +30,6 @@ export default function RecommendationsStrip() {
               <p className="text-sm font-extrabold text-slate-900">
                 AI Infrastructure Recommendations
               </p>
-              <span className="inline-flex items-center gap-1 rounded-full bg-accent-50 px-2 py-0.5 text-[10px] font-bold text-accent-700">
-                <Sparkles className="h-2.5 w-2.5" />
-                OSM Correlated
-              </span>
             </div>
             <p className="text-xs text-slate-500">
               Actionable municipal engineering proposals generated from fleet cluster density
