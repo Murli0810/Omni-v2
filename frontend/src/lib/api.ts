@@ -15,10 +15,10 @@ import {
   MOCK_ROUTE_DELAYS,
 } from "./mock-data";
 
-export const API_BASE_URL =
-  process.env.API_BASE_URL || "http://localhost:8000";
+export const NEXT_PUBLIC_API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
 
-  if (!process.env.API_BASE_URL &&
+  if (!process.env.NEXT_PUBLIC_API_BASE_URL &&
     typeof window !== "undefined" &&
     window.location.hostname !== "localhost") {
   console.warn(
@@ -32,7 +32,7 @@ async function fetchWithFallback<T>(endpoint: string, fallbackData: T): Promise<
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 3500);
 
-    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+    const response = await fetch(`${NEXT_PUBLIC_API_BASE_URL}${endpoint}`, {
       headers: {
         Accept: "application/json",
       },
