@@ -9,8 +9,10 @@ sys.path.append(str(Path(__file__).resolve().parent.parent / "utils"))
 
 from storage_utils import upload_snapshot
 
-MODEL_PATH= "../weights/pothole.pt"
-VIDEO_SOURCE= "../../data/sample1.mp4"
+EDGE_DIR = Path(__file__).resolve().parent.parent
+MODEL_PATH= MODEL_PATH = str(EDGE_DIR / "weights" / "pothole.pt")
+BACKEND_DIR = Path(__file__).resolve().parent.parent.parent
+VIDEO_SOURCE = str(BACKEND_DIR / "data" / "sample1.mp4")
 API_URL= "http://127.0.0.1:8000/api/events"
 Confidence_Threshold= 0.65
 Cooldown_Time= 5
